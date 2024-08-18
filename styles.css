@@ -219,3 +219,32 @@ footer {
     margin-top: 20px;
     font-size: 0.9rem;
 }
+/* Resume Section */
+#resume {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#resume p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+#resume .btn-primary {
+    background: #ff6347;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background 0.3s;
+}
+
+#resume .btn-primary:hover {
+    background: #ff4500;
+}
