@@ -1,112 +1,277 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio | Abhinav Srivastava</title>
+    <title>Abhinav Srivastava | Web Developer</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+
 <body>
+    <!-- Header Section -->
     <header>
         <div class="container">
-            
             <nav>
+                <div class="logo">
+                    <a href="#hero">AS</a>
+                </div>
+                <div class="menu-icon">
+                    <i class="fas fa-bars"></i>
+                </div>
                 <ul class="nav-list">
-                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#skills">Skills</a></li>
+                    <li><a href="#resume">Resume</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
+
+    <!-- Dark Mode Toggle -->
+    <div class="dark-mode-toggle">
+        <input type="checkbox" id="dark-mode">
+        <label for="dark-mode">Dark Mode</label>
+    </div>
+    
+    <!-- Main Content -->
     <main>
-        <section id="hero">
-            <div class="container">
-                <h2>Hi, I'm Abhinav Srivastava</h2>
-                <p>Proficient in front-end development, with a keen interest in UI/UX design principles to create intuitive and visually appealing web interfaces.</p>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <h1>Hi, I'm Abhinav Srivastava</h1>
+                <p>Passionate Web Developer creating dynamic, responsive web applications with modern technologies. Let's build something amazing together!</p>
                 <a href="#projects" class="btn-primary">View My Work</a>
             </div>
         </section>
 
-        <section id="about" class="section-padding">
+        <!-- About Section -->
+        <section id="about" class="section-padding about-section">
             <div class="container">
-                <h2>About Me</h2>
-                <div class="about-content">
-                    <img src="profile.jpg" alt="Profile Picture" class="profile-img">
-                    <p>Crafting responsive, user-friendly websites with a passion for clean code and innovative design. Recently graduated with hands-on experience in HTML, CSS, JavaScript, and React. Eager to bring fresh ideas and creative solutions to the digital world.</p>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <h2>About Me</h2>
+                        <p>Crafting responsive, user-friendly websites with a passion for clean code and innovative design. Recently graduated with hands-on experience in HTML, CSS, JavaScript, and React. Eager to bring fresh ideas and creative solutions to the digital world.</p>
+                    </div>
+                    <div class="about-image">
+                        <img src="profile.jpg" alt="Profile Picture">
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="projects" class="section-padding">
+        <!-- Projects Section -->
+        <section id="projects" class="section-padding projects-section">
             <div class="container">
-                <h2>Projects</h2>
+                <h2 class="section-title">Projects</h2>
                 <div class="projects-grid">
                     <div class="project-card">
-                        <div class="image-container">
-                            <img src="project1.jpeg" alt="Project One">
+                        <div class="project-image">
+                            <img src="project1.jpeg" alt="Text-to-speech">
                         </div>
-                        <h3>Text-to-speech</h3>
-                        <p>Integrate text-to-speech functionality using JavaScript's Speech Synthesis API to enhance user experience and accessibility.</p>
-                        <a href="https://abhisriv03.github.io/Convert-Text-to-Speech/" target="_blank" class="btn-secondary">View</a>
+                        <div class="project-content">
+                            <h3>Text-to-speech</h3>
+                            <p>Integrate text-to-speech functionality using JavaScript's Speech Synthesis API to enhance user experience and accessibility.</p>
+                            <a href="https://abhisriv03.github.io/Convert-Text-to-Speech/" target="_blank" class="btn-secondary">View Project</a>
+                        </div>
                     </div>
                     <div class="project-card">
-                        <div class="image-container">
-                            <img src="download.png" alt="Project Two">
+                        <div class="project-image">
+                            <img src="download.png" alt="Calculator">
                         </div>
-                        <h3>Calculator</h3>
-                        <p>A web-based app designed to perform basic arithmetic operations, showcasing dynamic, real-time functionality using JavaScript.</p>
-                        <a href="https://abhisriv03.github.io/Clculator/" target="_blank" class="btn-secondary">View</a>
+                        <div class="project-content">
+                            <h3>Calculator</h3>
+                            <p>A web-based app designed to perform basic arithmetic operations, showcasing dynamic, real-time functionality using JavaScript.</p>
+                            <a href="https://abhisriv03.github.io/Clculator/" target="_blank" class="btn-secondary">View Project</a>
+                        </div>
                     </div>
                     <div class="project-card">
-                        <div class="image-container">
-                            <img src="project3.png" alt="Project Three">
+                        <div class="project-image">
+                            <img src="project3.png" alt="Feedback-UI-design">
                         </div>
-                        <h3>Feedback-UI-design</h3>
-                        <p>Create a user-friendly interface for collecting and displaying user feedback with intuitive design and responsive interfaces.</p>
-                        <a href="https://abhisriv03.github.io/feedback-ui-design/" target="_blank" class="btn-secondary">View</a>
+                        <div class="project-content">
+                            <h3>Feedback-UI-design</h3>
+                            <p>Create a user-friendly interface for collecting and displaying user feedback with intuitive design and responsive interfaces.</p>
+                            <a href="https://abhisriv03.github.io/feedback-ui-design/" target="_blank" class="btn-secondary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Skills Section -->
+        <section id="skills" class="section-padding skills-section">
+            <div class="container">
+                <h2>Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fab fa-html5"></i>
+                        </div>
+                        <h3>HTML & CSS</h3>
+                        <p>Mastering the basics of web development with structured and styled markup.</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fab fa-js"></i>
+                        </div>
+                        <h3>JavaScript</h3>
+                        <p>Dynamic and interactive functionalities with modern JavaScript.</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fab fa-react"></i>
+                        </div>
+                        <h3>React</h3>
+                        <p>Building modern, scalable, and maintainable user interfaces.</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Golang</h3>
+                        <p>Efficient and scalable back-end solutions with the Go programming language.</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fab fa-node-js"></i>
+                        </div>
+                        <h3>Node.js</h3>
+                        <p>Server-side development with high performance and scalability.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="skills" class="section-padding">
-            <div class="container">
-                <h2>Skills</h2>
-                <ul class="skills-list">
-                    <li>HTML & CSS</li>
-                    <li>JavaScript</li>
-                    <li>React</li>
-                    <li>Python</li>
-                    <li>Node.js</li>
-                </ul>
-            </div>
-        </section>
-        <section id="resume" class="section-padding">
+        <!-- Resume Section -->
+        <section id="resume" class="section-padding resume-section">
             <div class="container">
                 <h2>Resume</h2>
-                <p>Download my resume to learn more about my professional background and skills.</p>
-                <a href="Resume.pdf" download class="btn-primary">Download Resume</a>
+                <p>Explore my professional journey, education, and skills. You can download my resume or view a preview below.</p>
+                
+                <!-- Resume Highlights -->
+                <div class="resume-highlights">
+                    <div class="resume-card">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h3>Education</h3>
+                        <p>Bachelor of Technology in Computer Science, Babu Banarasi Das University</p>
+                    </div>
+                    <div class="resume-card">
+                        <i class="fas fa-briefcase"></i>
+                        <h3>Experience</h3>
+                        <p>Frontend Developer Intern at Ikigai</p>
+                    </div>
+                    <div class="resume-card">
+                        <i class="fas fa-award"></i>
+                        <h3>Certifications</h3>
+                        <p>Certified JavaScript Developer, Certified React Developer</p>
+                    </div>
+                </div>
+        
+                <!-- Skill Progress Bars -->
+                <div class="skill-bars">
+                    <div class="skill-bar">
+                        <h4>HTML & CSS</h4>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bar">
+                        <h4>JavaScript</h4>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bar">
+                        <h4>React</h4>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bar">
+                        <h4>Node.js</h4>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 75%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Resume Download & Preview -->
+                <div class="resume-download">
+                    <a href="resume.pdf" download class="btn-primary">Download Resume</a>
+                    <button class="btn-secondary" onclick="openResumeModal()">Preview Resume</button>
+                </div>
+        
+                <!-- Resume Preview Modal -->
+                <div id="resumeModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeResumeModal()">&times;</span>
+                        <embed src="resume.pdf" type="application/pdf" width="100%" height="600px">
+                    </div>
+                </div>
             </div>
         </section>
-
-        <section id="contact" class="section-padding">
+        
+        <!-- Contact Section -->
+        <section id="contact" class="section-padding contact-section">
             <div class="container">
                 <h2>Contact Me</h2>
-                <p>Email: <a href="mailto:Abhisrivastavs830@gmail.com">Abhisrivastavs830@gmail.com</a></p>
-                <p>LinkedIn: <a href="https://www.linkedin.com/in/abhinav-srivastava-b034b4223" target="_blank">Abhinav Srivastava</a></p>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h3>Get in Touch</h3>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <p>Email: <a href="mailto:Abhisrivastavs830@gmail.com">Abhisrivastavs830@gmail.com</a></p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-linkedin"></i>
+                            <p>LinkedIn: <a href="https://www.linkedin.com/in/abhinav-srivastava-b034b4223" target="_blank">Abhinav Srivastava</a></p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-github"></i>
+                            <p>GitHub: <a href="https://github.com/abhisriv03" target="_blank">github.com/abhisriv03</a></p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-instagram"></i>
+                            <p>Instagram: <a href="https://www.instagram.com/abhinav103_/" target="_blank">@abhinav103_</a></p>
+                        </div>
+                    </div>
+                    <form action="#" method="post" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Send Message</button>
+                    </form>
+                </div>
             </div>
         </section>
     </main>
 
+    <!-- Footer -->
     <footer>
         <div class="container">
             <p>&copy; 2024 Abhinav Srivastava. All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js" defer></script>
 </body>
+
 </html>
